@@ -10,6 +10,10 @@ function MainNavigation() {
 
 	const isLoggedIn = context.isLoggedIn;
 
+	function loguotHandler() {
+		context.logout();
+	}
+
 	return (
 		<header className={classes.header}>
 			<Link to="/">
@@ -29,7 +33,7 @@ function MainNavigation() {
 					)}
 					{isLoggedIn && (
 						<li>
-							<button>Logout</button>
+							<button onClick={loguotHandler}>Logout</button>
 						</li>
 					)}
 				</ul>
