@@ -1,6 +1,6 @@
 import StartingPageContent from '../components/StartingPage/StartingPageContent';
 
-const HomePage = () => {
+function HomePage() {
   return <StartingPageContent />;
 };
 
